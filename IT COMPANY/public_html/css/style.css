@@ -1,0 +1,329 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Author     : frontend
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300;400&display=swap');
+
+/*FONTS*/
+
+
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+
+    font-size: 1.4rem;
+    font-family: 'Lato',sans-serif;
+    color: #2C2D3C;
+    line-height: 2.6rem;
+    letter-spacing: 0.54px;
+    
+}
+
+img{
+    max-width: 100%;
+}
+
+.clearfix:after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 1170px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: 'Anton',sans-serif;
+    color: #6DD1FF;
+}
+h1{
+    font-size: 6rem;
+    line-height: 8.4rem;
+    letter-spacing: 1px;
+
+}
+h2{
+    font-size: 4rem;
+    line-height:8.4rem ;
+    letter-spacing: 0.67px;
+    text-transform: uppercase;
+
+}
+
+.d-flex{
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flexbox;  
+}
+
+.wrap{
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+
+.justify-between{
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+
+.justify-end{
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-flex-pack: end;
+}
+
+.align-items-center{
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-flex-align: center;
+}
+
+.align-items-start{
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-flex-align: start;
+}
+
+.two-column{
+    flex: 0 0 49%;
+    -webkit-flex: 0 0 49%;
+    -moz-flex: 0 0 49%;
+    -ms-flex:0 0 49%;
+}
+
+.four-column{
+    flex: 0 0 24%;
+    -webkit-flex: 0 0 24%;
+    -moz-flex: 0 0 24%;
+    -ms-flex:0 0 24%;
+}
+
+/*HEDERR*/
+
+header .main-menu{
+    padding: 0;
+    list-style: none;
+    
+    
+}
+
+header .main-menu li{
+    margin-left: 68px;
+
+}
+header .main-menu li a{
+    display: block;
+    padding: 25px 0px;
+    color: #A8A8A8;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.53px;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    position: relative;
+}
+
+header .main-menu li a.active,
+header .main-menu li a:hover{
+    color: #1085EA;
+}
+
+header .main-menu li a:before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #1085EA;
+    transition: all 0.5s linear;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+header .main-menu li a.active:before,
+header .main-menu li a:hover:before{
+    width: 100%;
+}
+
+
+/*HOME*/
+
+.home{
+    padding: 211px 0 181px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.link-button{
+    display: inline-block; 
+    padding: 10px 24px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(139.4deg, #1085EA 0%, #0E9FE2 100%);
+
+    color:#ffffff;
+
+    font-family: 'Anton',sans-serif;
+
+}
+.home p{
+    margin-bottom: 32px;
+}
+
+.about{
+    padding: 150px 0px;
+    position: relative;
+}
+
+.about .about-content{
+    flex: 0 0 46%;
+}
+
+.about >img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+
+}
+
+.about .about-content p{
+    margin-bottom: 20px;
+}
+
+
+.services{
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.services h2{
+    margin-bottom: 65px;
+}
+
+.services .services-article h3{
+    color: #1085EA;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.71px;
+    text-transform: uppercase;
+}
+
+.services .services-article .services-features{
+    list-style: none;
+    padding: 0;
+
+}
+
+.portfolio{
+    padding: 80px 0px;
+    text-align: center;
+}
+.portfolio h2{
+    margin-bottom: 32px;
+}
+
+.portfolio .portfolio-item img{
+    display: block;
+    width: 100%;
+    transition: all 0.5s linear;
+}
+
+.portfolio .portfolio-item{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.portfolio .portfolio-item .link-button{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.portfolio .portfolio-item:hover .link-button{
+    display: block;
+}
+
+.portfolio .portfolio-item:hover img{
+    transform: scale(1.2);
+}
+
+
+
+.contact{
+    padding: 148px 0 61px ;
+    background: url(imgfooter.png)no-repeat center top;
+    background-size: cover;
+    
+}
+.contact h2{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.contact aside iframe{
+    width: 100%;
+    height: 314px;
+}
+
+.contact .contact-form .form-group{
+    margin-bottom: 25px;
+}
+
+.contact .contact-form .form-element{
+    border: 1px solid white;
+    line-height: 45px;
+    color: white;
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+.contact .form-group .link-button{
+    border: none;
+}
+
+footer{
+    padding:20px 0px;
+}
